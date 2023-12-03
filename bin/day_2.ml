@@ -36,5 +36,5 @@ let run part =
     | 2 -> power_minimum
     | _ -> raise Invalid_part
   in
-  let value = List.sum (module Int) (search_possible games) ~f:(fun x -> x) in
+  let value = List.sum (module Int) (search_possible games) ~f:Fn.id in
   printf "%i\n" value
