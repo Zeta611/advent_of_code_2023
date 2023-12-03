@@ -1,7 +1,7 @@
 open Core
 open Advent_of_code_2023.Exceptions
 
-let drivers = [ Day_1.run ]
+let drivers = [ Day_1.run; Day_2.run ]
 
 let run_driver day_and_part =
   let day, part = day_and_part in

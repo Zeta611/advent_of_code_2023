@@ -1,4 +1,11 @@
 (library
  (name advent_of_code_2023)
  (libraries core stdio)
- (preprocess (pps ppx_jane)))
+ (preprocess
+  (pps ppx_jane)))
+
+(ocamllex day_2_lexer)
+
+(menhir
+ (modules day_2_parser)
+ (flags --explain))
