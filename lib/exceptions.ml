@@ -1,0 +1,2 @@
+exception Invalid_day
+exception Invalid_part
